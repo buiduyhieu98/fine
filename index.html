@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from thisisfine.vip/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Nov 2024 14:19:27 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <title>Fine - This is Fine</title>
+</head>
+<body>
+    <div id="firstPage">
+        <video id="videoBack" autoplay loop muted playsinline src="assets/Fine%20Animation.mp4" type="video/mp4" >
+        </video>
+        <header class="header">
+                    <div class="navbar">
+                        <a href="#firstPage" class="menuItem">Home</a>
+                        <a href="#story" class="menuItem">Story</a>
+                        <img id="logo" src="assets/Logo.png" alt="">
+                        <a href="#faqSection" class="menuItem">FAQ</a>
+                        <a href="#footer" class="menuItem">Links</a>
+                    </div>
+        </header>
+    </div>
+    <div id="story">
+        <h1>STORY</h1>
+        <div class="storyline">
+            <p>In a world where the internet culture reigns supreme, there existed a dog who had become a symbol of universal acceptance—acceptance of both chaos and serenity. This dog, known as "This Is Fine Dog" or simply "FINE," found himself in situations that ranged from the most disastrous to the idyllic, always with the same nonchalant response: "This is fine." </p>
+            <div id="eyes"><video autoplay loop muted playsinline src="assets/trueanim.mp4" type="video/mp4" >
+            </div>
+        </div>
+    </div>
+    <div id="tokenomics">
+        <h1>TOKENOMICS</h1>
+        <div class="tokens">
+            <div class="token">
+                <img src="assets/Supply.png" alt="">
+                <h2 class="tokenTitle">SUPPLY</h2>
+        
+            </div>
+            <div class="token">
+                <img src="assets/Contract.png" alt="">
+                <h2 class="tokenTitle">CONTRACT</h2>
+            
+            </div>
+            <div class="token">
+                <img src="assets/Burned.png" alt="">
+                <h2 class="tokenTitle">BURNED</h2>
+                
+            </div>
+        </div>
+    </div>
+    <div class="roadmap">   
+        <h1>ROADMAP</h1>
+        <div id="stages">
+            <div class="stage">
+                <h2 class="stageNumber">1</h2>
+                <p class="stageDesc">
+                    <p class="descItem">• DexScreener & DexTools ads</p>
+                    <p class="descItem">• CoinGecko/Coinmarketcap listings</p>
+                    <p class="descItem">• 1000+ holders</p>
+                </p>
+            </div>
+            <div class="stage">
+                <h2 class="stageNumber">2</h2>
+                <p class="stageDesc">
+                    <p class="descItem">• Get $FINE trending on DexScreener </p>
+                    <p class="descItem">• Get $FINE trending on Twitter</p>
+                    <p class="descItem">• Twitter spaces</p>
+                </p>
+            </div>
+            <div class="stage">
+                <h2 class="stageNumber">3</h2>
+                <p class="stageDesc"> 
+                    <p class="descItem">• T1 Exchange listings</p>
+                    <p class="descItem">• 10 000+ holders</p>
+                    <p class="descItem">• Website Revision</p>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="faq">
+        <h1>FAQ</h1>
+        <div id="faqSection">
+            <div class="fineFaq">
+                <img id="fineImg" src="assets/Character%20Fine%201.png" alt="">
+                <img id="bubble" src="assets/ANIMATED.png" alt="">
+            </div>
+            <div class="faqList">
+                <div class="listItem">
+                    <button class="titleItem" data-target="pop1,bubble">Marketing plan</button>
+                    <div class="fine" id="pop1">It will be fine</div>
+                </div>
+                <div class="listItem">
+                    <button class="titleItem" data-target="pop2,bubble">When listing on exchanges?</button>
+                    <div class="fine" id="pop2">Don't worry, tier 1 exchanges will be fine.</div>
+                </div>
+                <div class="listItem">
+                    <button class="titleItem" data-target="pop3,bubble">Dex trending?</button>
+                    <div class="fine" id="pop3">It will be fine.</div>
+                </div>
+                <div class="listItem">
+                    <button class="titleItem" data-target="pop4,bubble">Is this legit?</button>
+                    <div class="fine" id="pop4">Yes, Its Fine</div>
+                </div>
+                <div class="listItem">
+                    <button class="titleItem" data-target="pop5,bubble">Is this fine?</button>
+                    <div class="fine" id="pop5">Yes, This is fine of course.</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="footer">
+        <h1>LINKS & ADDRESS</h1>
+        <div class="socials">
+            <a href="https://x.com/Fine__Solana" class="socialLinks" id="twitter">TWITTER</a>
+            <a href="https://t.me/FineComunitySol" class="socialLinks" id="tele">TELEGRAM</a>
+            
+            
+        </div>
+    
+        <img id="footerFine" src="assets/Fine.png" alt="">
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const counterElement = document.getElementById('counter');
+            const targetNumber = parseInt(counterElement.getAttribute('data-target'), 10);
+
+            if (isNaN(targetNumber)) {
+                console.error("Invalid target number.");
+                return;
+            }
+
+            let currentNumber = 0;
+            const duration = 50000; // Duration of the animation in milliseconds
+            const increment = targetNumber / (duration / 100);
+
+            function updateCounter() {
+                currentNumber += increment;
+                if (currentNumber >= targetNumber) {
+                    counterElement.innerText = targetNumber;
+                } else {
+                    counterElement.innerText = Math.floor(currentNumber);
+                    requestAnimationFrame(updateCounter);
+                }
+            }
+
+            requestAnimationFrame(updateCounter);
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const counterElement = document.getElementById('counter2');
+            const targetNumber = parseInt(counterElement.getAttribute('data-target'), 10);
+
+            if (isNaN(targetNumber)) {
+                console.error("Invalid target number.");
+                return;
+            }
+
+            let currentNumber = 0;
+            const duration = 50000; // Duration of the animation in milliseconds
+            const increment = targetNumber / (duration / 100);
+
+            function updateCounter() {
+                currentNumber += increment;
+                if (currentNumber >= targetNumber) {
+                    counterElement.innerText = targetNumber;
+                } else {
+                    counterElement.innerText = Math.floor(currentNumber);
+                    requestAnimationFrame(updateCounter);
+                }
+            }
+
+            requestAnimationFrame(updateCounter);
+        });
+
+        document.querySelectorAll('.titleItem').forEach(button => {
+            button.addEventListener('click', function() {
+                const targetIds = this.getAttribute('data-target').split(',');
+
+                targetIds.forEach(targetId => {
+                const contentDiv = document.getElementById(targetId.trim());
+                if (contentDiv) {
+                     contentDiv.style.display = contentDiv.style.display === 'block' ? 'none' : 'block';
+                    }
+                });
+        });
+        });
+
+    </script>
+</body>
+
+<!-- Mirrored from thisisfine.vip/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 04 Nov 2024 14:19:33 GMT -->
+</html>
